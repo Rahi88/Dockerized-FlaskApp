@@ -1,45 +1,40 @@
-Simple Flask Todo App using SQLAlchemy and SQLite database.
+# 📝 Flask Todo App (Dockerized)
 
-For styling [semantic-ui](https://semantic-ui.com/) is used.
+This is a simple **Flask-based Todo web application** that uses **Flask-SQLAlchemy** and **SQLite** for data storage.  
+It has been containerized using **Docker** to simplify setup and deployment.
 
-### Setup
-Create project with virtual environment
+### 🛠 Features
 
-```console
-$ mkdir myproject
-$ cd myproject
-$ python3 -m venv venv
-```
+- Add and delete tasks
+- Uses SQLite database with SQLAlchemy ORM
+- Clean UI with [Semantic UI](https://semantic-ui.com/)
+- Dockerized for easy local setup
 
-Activate it
-```console
-$ . venv/bin/activate
-```
+---
 
-or on Windows
-```console
-venv\Scripts\activate
-```
+## 🚀 Quick Start (Using Docker)
 
-Install Flask
-```console
-$ pip install Flask
-$ pip install Flask-SQLAlchemy
-```
+### 1️⃣ Clone this repository
+```bash
+git clone https://github.com/Rahi88/Todo-App.git
+cd Todo-App
+### 2️⃣ Build the Docker image
+docker build -t flask-todo .
+###3️⃣ Run the app
+docker run -p 5000:5000 flask-todo
+###4️⃣ Open in Browser
+Visit: http://localhost:5000
 
-Set environment variables in terminal
-```console
-$ export FLASK_APP=app.py
-$ export FLASK_ENV=development
-```
+Technologies Used
 
-or on Windows
-```console
-$ set FLASK_APP=app.py
-$ set FLASK_ENV=development
-```
+    Python 3.9
 
-Run the app
-```console
-$ flask run
-```
+    Flask
+
+    Flask-SQLAlchemy
+
+    SQLite
+
+    Semantic UI
+
+    Docker
