@@ -45,6 +45,11 @@ def delete(todo_id):
     db.session.commit()
     return redirect(url_for("home"))
 
+
 if __name__ == "__main__":
-    db.create_all()
-    app.run(debug=True)
+    with app.app_context():
+        db.create_all()
+    #app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
+
+
