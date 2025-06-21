@@ -26,22 +26,22 @@ docker run -p 5000:5000 flask-todo
 Visit: http://localhost:5000
 
 Technologies Used
- --Python 3.9
- --Flask
- --Flask-SQLAlchemy
- --SQLite
- --Semantic UI
- --Docker
+ -Python 3.9
+ -Flask
+ -Flask-SQLAlchemy
+ -SQLite
+ -Semantic UI
+ -Docker
 #💡 To Run Without Docker 
 
 You can also run this app manually:
 Setup virtual environment (Windows)
 
---python -m venv venv
---venv\Scripts\activate
---pip install -r requirements.txt
+-python -m venv venv
+-venv\Scripts\activate
+-pip install -r requirements.txt
 
 #Start Flask app
---python app.py
+-python app.py
 
 
