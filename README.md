@@ -37,6 +37,7 @@ docker run -p 5000:5000 flask-todo
 
 Visit: [http://localhost:5000](http://localhost:5000)
 
+---
 
 ## 💡 Run Without Docker
 
